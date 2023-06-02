@@ -43,7 +43,7 @@ while True:
         count+=1
         #face=cv2.resize(src, dsize[, dst[, fx[, fy[, interpolation]]]])
         face = cv2.resize(face_extractor(frame),(500,500))#returns the resized image or frame according to the specified parameters.
-        face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
+        #face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
     
     
         file_name_path =rf"C:\Users\shrey\OneDrive\Desktop\proj_thur\dataset\{name}\{name} " +str(count)+'.jpg'
