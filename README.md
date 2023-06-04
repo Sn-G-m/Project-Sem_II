@@ -1,1 +1,3 @@
-# Project-Sem_II
+# Semester II Project
+
+## Face Recognition Attendance System
