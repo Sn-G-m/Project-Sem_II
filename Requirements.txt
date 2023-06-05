@@ -1,0 +1,10 @@
+open-cv
+numpy
+os
+datetime
+time
+PyQt5
+imutils
+argparse
+pickle
+scikit-learn
