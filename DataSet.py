@@ -4,7 +4,7 @@ import datetime
 import time
 import cv2
 import os
-
+from ManipulateImage import manipulate
 
 def manipulate(dict_paths, parent_folder):
     import os
