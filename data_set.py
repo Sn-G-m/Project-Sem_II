@@ -4,36 +4,7 @@ import datetime
 import time
 import cv2
 import os
-from ManipulateImage import manipulate
-
-def manipulate(dict_paths, parent_folder):
-    import os
-    import cv2
-    for key in dict_paths:
-        image = cv2.imread(dict_paths[key])
-        for i in range(2, 4):
-            j = i / 2
-            # Apply the brightness transformation
-            transformed_image_b = cv2.convertScaleAbs(image, alpha=j)
-            transformed_image_d = cv2.convertScaleAbs(image, alpha=1/j)
-            transformed_image_c = cv2.convertScaleAbs(image, beta=60*j)
-            print("transformations")
-            file_name = os.path.basename(dict_paths[key])
-            # Save the transformed images
-            name_1 = "Bright" + str(i - 1) + file_name
-            name_2 = "Dark" + str(i - 1) + file_name
-            name_3 = "Contrast" + str(i - 1) + file_name
-            print("namings")
-            print(name_1)
-            print(dict_paths[key])
-            transformed_image_path_1 = os.path.join(parent_folder, name_1)
-            transformed_image_path_2 = os.path.join(parent_folder, name_2)
-            transformed_image_path_3 = os.path.join(parent_folder, name_3)
-            print("paths")
-            print(parent_folder)
-            cv2.imwrite(transformed_image_path_1, transformed_image_b)
-            cv2.imwrite(transformed_image_path_2, transformed_image_d)
-            cv2.imwrite(transformed_image_path_3, transformed_image_c)
+from manipulate_image import manipulate
 
 
 # Specify the file paths for your face detection model
