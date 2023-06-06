@@ -16,15 +16,12 @@ def manipulate(dict_paths, parent_folder):
             name_1 = "Bright" + str(i - 1) + file_name
             name_2 = "Dark" + str(i - 1) + file_name
             name_3 = "Contrast" + str(i - 1) + file_name
-            print("namings")
             print(name_1)
             print(dict_paths[key])
             # Path specifications
             transformed_image_path_1 = os.path.join(parent_folder, name_1)
             transformed_image_path_2 = os.path.join(parent_folder, name_2)
             transformed_image_path_3 = os.path.join(parent_folder, name_3)
-            print("paths")
-            print(parent_folder)
             # Writing into the file
             cv2.imwrite(transformed_image_path_1, transformed_image_b)
             cv2.imwrite(transformed_image_path_2, transformed_image_d)
