@@ -13,7 +13,9 @@ The option "Add Applicant" enables us to take pictures of individuals and save t
 
 The following image shows how the image capturing will look like.
 
-(IMAGES)
+(IMAGES)![Fce capturing 1](https://github.com/Sn-G-m/Project-Sem_II/assets/133529150/526b9242-a42f-4979-8223-5aa8cd7530d9)
+![Face capturing 2](https://github.com/Sn-G-m/Project-Sem_II/assets/133529150/93d1ed87-ea75-41b5-86fb-1989307d5f92)
+
 
 #### Dataset and Database Creation
 
