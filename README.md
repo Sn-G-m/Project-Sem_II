@@ -41,9 +41,21 @@ These are some of the problems which we are facing and would like to work on in 
 * For that reason, the number of images per person is reduced, which affects the accuracy significantly.
 * Proxy attendance cannot be detected.
 
+#### References
+
++ https://youtu.be/1T1gUsbyMhI
++ [Models and Accuracies - OpenFace (cmusatyalab.github.io)](https://cmusatyalab.github.io/openface/models-and-accuracies/) 
++ [OpenFace (cmusatyalab.github.io)](https://cmusatyalab.github.io/openface/)
++ [Face recognition using OpenCV and Python: A beginner's guide - Blogs - SuperDataScience | Machine Learning | AI | Data Science Career | Analytics | Success](https://www.superdatascience.com/blogs/opencv-face-recognition)
 
 
+#### Contibutors
 
+| Sl.No  | Name  | Roll.No |
+| :------------ |:---------------:| -----:|
+| 1      | Sooryanarayanan G | 112201012 |
+| 2      | Shreya Verma        |   112201007 |
+| 3 | Maloth Sony        |    112201011 |
 
 
 
