@@ -22,7 +22,9 @@ The following image shows how the image capturing will look like.
 The captured image is stored in a folder with the applicant's name. The images are slightly manipulated i.e. brightness and contrasts are varied to increase the accuracy during real-time recognition. An Excel file is also created at the same time (if not already existing) and a sheet with the current month's name is also added to it. 
 The names of the applicant will also be entered in the sheet.
 
-(IMAGES)
+An example of the dataset creation and manipulated image folder is shown below.
+
+![Data_set](https://github.com/Sn-G-m/Project-Sem_II/assets/133529150/6996dbef-1e32-47f9-a9b7-45e51a1d711d)
 
 #### Real-Time Recognition and Attendance Marking
 
