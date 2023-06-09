@@ -30,7 +30,6 @@ An example of the dataset creation and manipulated image folder is shown below.
 
 After the extraction and training process, the program is now ready for real-time recognition. The face which is in front of the main camera will be recognized and marked as present if the individual's name is in the database. Otherwise, there is an option to add the unrecognised face to the dataset. Attendance will be marked once per person per day.
 
-(IMAGES)
 
 ### Requirements
 
