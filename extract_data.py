@@ -11,23 +11,25 @@ import os                     # Provides a way to interact with the OS
 import cv2
 from train_data import train
 # File paths
+
+
 def push_button_2():
     DEFAULT_DATASET = (r"C:\Users\DELL\AppData\Local\Programs\Python\Python311"
-                    r"\SemIIProject\Sample2\Final_Project\dataset")
+                       r"\SemIIProject\Sample2\Final_Project\dataset")
     DEFAULT_VECTOR = (r"C:\Users\DELL\AppData\Local\Programs\Python\Python311"
-                    r"\SemIIProject\Sample2\Final_Project\output"
-                    r"\ExtractedData.PICKLE")
-    DEFAULT_DETECTOR = (r"C:\Users\DELL\AppData\Local\Programs\Python\Python311"
-                        r"\SemIIProject\Sample2\Final_Project"
+                      r"\SemIIProject\Sample2\Final_Project\output"
+                      r"\ExtractedData.PICKLE")
+    DEFAULT_DETECTOR = (r"C:\Users\DELL\AppData\Local\Programs\Python"
+                        r"\Python311\SemIIProject\Sample2\Final_Project"
                         r"\face_detection_model")
     DEFAULT_MODEL = (r"C:\Users\DELL\AppData\Local\Programs\Python\Python311"
-                    r"\SemIIProject\Sample2\Final_Project"
-                    r"\openface_nn4.small2.v1.t7")
+                     r"\SemIIProject\Sample2\Final_Project"
+                     r"\openface_nn4.small2.v1.t7")
     DEFAULT_CONFIDENCE = 0.75
 
-
     # Adding argument
-    arg_parser = argparse.ArgumentParser()   # Creating an ArgumentParser instance
+    # Creating an ArgumentParser instance
+    arg_parser = argparse.ArgumentParser()
 
     arg_parser.add_argument("-ds", "--data_set", default=DEFAULT_DATASET)
     arg_parser.add_argument("-vf", "--vector_file", default=DEFAULT_VECTOR)
@@ -46,7 +48,7 @@ def push_button_2():
                                         "model_architecture.prototxt"])
     # Path for pre-trained model for face detection
     model_path = os.path.sep.join([arg_dict["face_detector"],
-                                "res10_300x300_ssd_iter_140000.caffemodel"])
+                                  "res10_300x300_ssd_iter_140000.caffemodel"])
 
     # Reading and iniitializing the detector using Caffe framework
     face_detector = dnn.readNetFromCaffe(proto_file_path, model_path)
@@ -74,7 +76,7 @@ def push_button_2():
     # Iterating through the files
     for (serial_no, location) in enumerate(img_path):
         print("Processing Image, iteratiion {}/{}".format((serial_no + 1),
-                                                        len(img_path)))
+                                                          len(img_path)))
         person = location.split(os.path.sep)[-2]
 
         # Loading images
@@ -84,8 +86,8 @@ def push_button_2():
 
         # Constructing a vector dimensional array of the image
         img_tensor = dnn.blobFromImage(cv2.resize(image, (300, 300)), 1.0,
-                                        (300, 300), (104.0, 177.0, 123.0),
-                                        swapRB=False, crop=False)
+                                       (300, 300), (104.0, 177.0, 123.0),
+                                       swapRB=False, crop=False)
 
         # Locating face with Deep Neural Network Model
         face_detector.setInput(img_tensor)
@@ -126,3 +128,4 @@ def push_button_2():
     file.write(pickle.dumps(face_data))
     file.close()
     train()
+
