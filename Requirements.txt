@@ -8,3 +8,4 @@ imutils
 argparse
 pickle
 scikit-learn
+openpyxl
