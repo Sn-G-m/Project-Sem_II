@@ -1,7 +1,7 @@
 # GUI
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from recognize_faces import push_button_3
+from recognise_faces import push_button_3
 from extract_data import push_button_2
 
 
